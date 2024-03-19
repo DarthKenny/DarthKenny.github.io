@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинг Частные Дома</title>
+  <!-- Подключаем Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Подключаем наши стили -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Частные Дома</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutus">О нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#houses">Список домов</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Галерея</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="about" class="bg-light py-4">
+  <div class="container-fluid px-0">
+    <div class="jumbotron-fluid text-center">
+      <div class="container text-center">
+        <h1 class="display-4" >Лучшие дома для отдыха</h1>
+        <p class="lead">Найдите свой идеальный дом с Частные Дома</p>
+        <a href="#houses" class="btn btn-dark">Посмотреть дома</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="aboutus" class="bg-light py-5">
+  <div class="container-fluid">
+    <h2 class="text-center mb-4">О нас</h2>
+    <p>
+      Компания "Частные Дома" - это ведущий поставщик частных домов, специализирующийся на предоставлении высококачественного жилья для отдыха и постоянного проживания. Мы стремимся сделать процесс поиска и аренды или покупки идеального дома максимально комфортным и удобным для наших клиентов.
+      <br>
+      <br>
+      <strong>Наша миссия</strong>
+      <br>
+      Мы верим, что каждый человек заслуживает уникального и уютного места для жизни и отдыха. Наша миссия - помогать людям находить идеальные дома, которые отвечают их потребностям, предпочтениям и бюджету. Мы создаем уникальные возможности для клиентов, чтобы они могли наслаждаться красотой природы, комфортом дома и свободой выбора.
+      <br>
+      <br>
+      <strong>Наши Ценности</strong>
+      <br>
+      1. Качество: Мы стремимся предоставлять только самое высокое качество жилья, прошедшее тщательный отбор и проверку на соответствие всем стандартам безопасности и комфорта.
+      <br>
+      2. Профессионализм: Наша команда состоит из опытных специалистов, готовых предоставить вам профессиональную консультацию и помощь на каждом этапе поиска и выбора дома.
+      <br>
+      3. Индивидуальный подход: Мы уважаем уникальные потребности каждого клиента и стремимся найти решения, которые подходят именно ему. Мы готовы адаптироваться к вашим пожеланиям и требованиям, чтобы помочь вам найти идеальный дом.
+      <br>
+      4. Прозрачность: Мы ценим открытость и прозрачность в отношениях с нашими клиентами. Мы всегда предоставляем полную информацию о доступных вариантах жилья, его характеристиках и стоимости, чтобы вы могли принимать взвешенные решения.
+      <br>
+      <br>
+      <strong>Наши Услуги</strong>
+      <br>
+      1. Поиск и аренда частных домов для отпуска.
+      <br>
+      2. Покупка и продажа частных домов.
+      <br>
+      3. Консультации и помощь в выборе и оформлении жилья.
+      <br>
+      4. Управление и обслуживание недвижимости.
+      <br>
+      <br>
+      Присоединяйтесь к нам и дайте нам возможность помочь вам найти вашу мечтательную резиденцию или идеальное место для отдыха!
+    </p>
+  </div>
+</section>
+
+
+<section id="houses" class="py-5">
+  <div class="container-fluid">
+    <h2 class="text-center mb-4">Список домов</h2>
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white">
+          <img class="card-img-top" src="img/озеро.jpg" alt="Дом 1">
+          <div class="card-body">
+            <h5 class="card-title">Дом у озера</h5>
+            <p class="card-text">Прекрасный вид на озеро рядом с лесом и свежий воздух.</p>
+             <button class="btn btn-dark" data-toggle="modal" data-target="#modal1">Подробнее</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white">
+          <img class="card-img-top" src="img/горы.jpg" alt="Дом 2">
+          <div class="card-body">
+            <h5 class="card-title">Дом в горах</h5>
+            <p class="card-text">Идеальное место для любителей природы.</p>
+            <button class="btn btn-dark" data-toggle="modal" data-target="#modal2">Подробнее</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card bg-secondary text-white">
+          <img class="card-img-top" src="img/побережье.jpg" alt="Дом 3">
+          <div class="card-body">
+            <h5 class="card-title">Дом на побережье</h5>
+            <p class="card-text">Отличный вариант для любителей морского воздуха.</p>
+            <button class="btn btn-dark" data-toggle="modal" data-target="#modal3">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="gallery-container">
+    <button class="gallery-btn gallery-btn-prev">&lt;</button>
+    <div class="gallery">
+      <img src="img/gallery1.jpg" alt="Image 1" class="gallery-image">
+      <img src="img/gallery2.jpg" alt="Image 2" class="gallery-image">
+      <img src="img/gallery3.jpg" alt="Image 3" class="gallery-image">
+      <img src="img/gallery4.jpg" alt="Image 3" class="gallery-image">
+      <img src="img/gallery5.jpg" alt="Image 3" class="gallery-image">
+    </div>
+    <button class="gallery-btn gallery-btn-next">&gt;</button>
+  </div>
+</section>
+
+<footer class="footer bg-dark text-muted text-center py-2">
+  <section id="contact">
+   <div class="container">
+    <h2 class="text-center mb-4">Контакты</h2>
+    <div class="row">
+      <div class="col-md-6 text-white">
+        <h3>Свяжитесь с нами</h3>
+        <p>Наша компания готова ответить на все ваши вопросы. Пожалуйста, свяжитесь с нами по следующим контактным данным:</p>
+        <ul>
+          <li>Телефон: +7 (123) 456-7890</li>
+          <li>Электронная почта: info@example.com</li>
+          <li>Адрес: ул. Пушкина, д.10, г. Ярославль, Россия</li>
+        </ul>
+      </div>
+      <div class="col-md-6 text-white">
+        <h3>Оставьте нам сообщение</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" class="form-control" id="name" placeholder="Введите ваше имя">
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" class="form-control" id="email" placeholder="Введите ваш email">
+          </div>
+          <div class="form-group">
+            <label for="message">Ваше сообщение</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+</footer>
+
+
+<!-- Модальные окна для подробной информации -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Title">Дом у озера</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Прекрасный вид на озеро рядом с лесом и свежий воздух.</p>
+        <p>Этот дом идеально подходит для тех, кто любит природу и хочет наслаждаться красотой озера каждый день.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Модальное окно для второй карточки -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal2Title">Дом в горах</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Идеальное место для любителей природы.</p>
+        <p>Этот дом находится в горной местности и окружен красивыми пейзажами.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Модальное окно для третьей карточки -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal3Title">Дом на побережье</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Отличный вариант для любителей морского воздуха.</p>
+        <p>Этот дом находится прямо на побережье и предлагает захватывающий вид на океан.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Подключаем jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
