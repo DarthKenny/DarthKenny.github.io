@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Частные Дома</title>
+  <title>Лендинг Частные Дома</title>
   <!-- Подключаем Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" >
   <!-- Подключаем наши стили -->
   <link href="styles.css" rel="stylesheet">
 </head>
@@ -144,21 +145,20 @@
   </div>
 </section>
 
-<footer class="footer bg-dark text-muted text-center py-2">
-  <section id="contact">
-   <div class="container">
+<section id="contact">
+   <div class="container-fluid bg-dark text-muted text-center py-2">
     <h2 class="text-center mb-4">Контакты</h2>
     <div class="row">
-      <div class="col-md-6 text-white">
+      <div class="col-md-4 text-white">
         <h3>Свяжитесь с нами</h3>
         <p>Наша компания готова ответить на все ваши вопросы. Пожалуйста, свяжитесь с нами по следующим контактным данным:</p>
-        <ul>
+        <ul class="list-unstyled text-center">
           <li>Телефон: +7 (123) 456-7890</li>
           <li>Электронная почта: info@example.com</li>
           <li>Адрес: ул. Пушкина, д.10, г. Ярославль, Россия</li>
         </ul>
       </div>
-      <div class="col-md-6 text-white">
+      <div class="col-md-4 offset-md-3 text-white">
         <h3>Оставьте нам сообщение</h3>
         <form>
           <div class="form-group">
@@ -178,10 +178,15 @@
       </div>
     </div>
   </div>
-  </section>
+</section>
+
+<footer class="footer">
+  <div class="bg-dark text-center text-white">
+    <div>© 2024 Георгий Кондратьев</div>
+    <div>Все права защищены</div>
+  </div>
 </footer>
-
-
+  
 <!-- Модальные окна для подробной информации -->
 <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -238,6 +243,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script defer src="js/bootstrap.bundle.min.js"></script>
 <script src="scripts.js"></script>
 </body>
 </html>
