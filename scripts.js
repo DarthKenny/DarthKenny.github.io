@@ -21,3 +21,62 @@ document.addEventListener("DOMContentLoaded", function() {
       gallery.style.transform = `translateX(${newPosition})`;
     }
   });
+  
+
+(function() {
+    emailjs.init("tGtWqlI6zaN2RT-r-");
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+    
+    const templateParamsToMe = {
+        from_name: name,
+        from_email: email,
+        message: message
+    };
+
+    const templateParamsToUser = {
+        from_name: name,
+        user_email: email
+    };
+
+    emailjs.send('service_f3t24qi', 'template_lvy4pgc', templateParamsToMe)
+        .then(function(response) {
+            console.log('SUCCESS (to me)!', response.status, response.text);
+        }, function(error) {
+            console.log('FAILED (to me)...', error);
+        });
+
+    emailjs.send('service_f3t24qi', 'template_hsdodm7', templateParamsToUser)
+        .then(function(response) {
+            console.log('SUCCESS (to user)!', response.status, response.text);
+            showModal('Сообщение успешно отправлено. Спасибо за ваше обращение.');
+        }, function(error) {
+            console.log('FAILED (to user)...', error);
+            showModal('Ошибка при отправке сообщения.');
+        });
+});
+
+function showModal(message) {
+    const modal = document.getElementById('modal');
+    const modalMessage = document.getElementById('modal-message');
+    const closeButton = document.querySelector('.close-button');
+
+    modalMessage.textContent = message;
+    modal.style.display = 'block';
+
+    closeButton.onclick = function() {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    };
+}
