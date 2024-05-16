@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host = 'smtp.yandex.ru';
         $mail->SMTPAuth = true;
-        $mail->Username = 'infoprivatehouse@yandex.ru'; // Ваш email на Яндексе
-        $mail->Password = 'jihcsurhspdvtfql'; // Пароль приложения
+        $mail->Username = 'infoprivatehouse@yandex.ru';
+        $mail->Password = 'jihcsurhspdvtfql';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         
