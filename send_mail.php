@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.yandex.ru';
         $mail->SMTPAuth = true;
         $mail->Username = 'infoprivatehouse@yandex.ru';
-        $mail->Password = 'jihcsurhspdvtfql';
+        $mail->Password = 'jihcsurhspdvtfql'; 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
         
@@ -60,6 +60,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 
 
