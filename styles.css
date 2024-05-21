@@ -9,7 +9,7 @@ body {
 }
 
 .collapse.navbar-collapse {
-    color: white; 
+  color: white; 
 }
 
 .section-container {
@@ -38,7 +38,6 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
 h2 {
   font-size: 40px; 
   color: white;
@@ -55,6 +54,7 @@ h2 {
   justify-content: center;
   color: white;
 }
+
 #aboutus {
   height: 100vh;
   background-position: center;
@@ -66,6 +66,7 @@ h2 {
   justify-content: center;
   color: white;
 }
+
 #houses {
   height: 100vh;
   background-position: center;
@@ -77,57 +78,63 @@ h2 {
   justify-content: center;
   color: white;
 }
+
 .gallery-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
-  height: 100%;
-}
-
-.gallery {
-  display: flex;
-  transition: transform 0.5s ease;
-  height: 100%;
-  
-}
-
-.gallery-image {
   width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 .gallery-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: white;
   border: none;
+  width: 50px;
+  height: 50px; 
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  z-index: 10;
   transition: background-color 0.3s ease;
-  z-index: 1;
-  font-size: 24px;
 }
 
 .gallery-btn:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .gallery-btn-prev {
-  left: 0;
+  left: 10px;
 }
 
 .gallery-btn-next {
-  right: 0;
+  right: 10px;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .alert.show {
   opacity: 1;
   transition: opacity 0.5s linear;
 }
+
 .alert {
   opacity: 0;
   transition: opacity 0.5s linear;
@@ -148,4 +155,61 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  
+  .section-container {
+    padding: 20px;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .gallery-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery-btn-prev {
+    left: 5px;
+  }
+
+  .gallery-btn-next {
+    right: 5px;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #about, #aboutus, #houses {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .house-card img {
+    height: auto;
+    width: 100%;
+  }
+
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery-image {
+    width: 100%;
+  }
 }
